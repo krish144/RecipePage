@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,700;0,800;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif; 
+}
+h1,h2{
+  font-family: 'Playfair Display', serif;
+  color: #333333;
+}
+h2{
+  font-style:italic ;
+}
+
+#header{
+    width: 70%;
+    margin: 2% auto;
+}
+
+#heading{
+  max-width: 690px;
+  position: relative;
+  margin-bottom: 4%;
+
+}
+
+#header h1{
+  font-size: 48px;
+  margin: 20px;
+}
+
+#header p{
+   margin:20px 30px;
+   color: #4f4f4f;
+   font-style: italic;
+   font-size: 14px;
+   font-weight: 500;
+   
+}
+
+#ellipse{
+  position: absolute;
+  left: 0px;
+  top: 89px;
+  width: 16px;
+}
+
+#image{
+  max-width :100%;
+  height: auto;
+}
+
+#content{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 2% auto;
+}
+
+#informations{
+  width: 55%;
+}
+
+#informations label{
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#informations h2{
+  font-size: 18px;
+  margin: 5% 0% 3%;
+}
+
+.ingre-items{
+  margin: 5%;
+}
+
+.list div{
+   margin: 5%;
+   color: #000000;
+   font-weight: 500;
+   font-size: 16px;
+}
+
+.list{
+  margin: 5%;
+  counter-reset: list-number;
+  position: relative;
+}
+
+div.list div::before{
+  counter-increment: list-number;
+  content: counter(list-number);
+  
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2994A;
+  font-size: 22px;
+  color: #ffffff;
+  font-weight:700;
+  border-radius: 6px;
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  left: -40px;
+}
+
+#serving-card{
+ 
+  width: 215px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.items{
+  display: flex;
+  justify-content: flex-start;
+  padding: 15% 0%;
+  font-weight: 600;
+}
+
+.sub{
+     font-size: 10px;
+     color:#BDBDBD;
+     margin: 2% 0%;
+}
+
+#serving-card i{
+  font-size: 36px;
+}
+
+
+
+#first{
+  padding: 10% 0%;
+  color: #F2994A;
+}
+
+footer{
+  text-align: center;
+  color:#828282;
+}
+footer a{
+  color: #828282;
+}
+
+@media (max-width:911px){
+   #header h1{
+    font-size: 38px;
+   }
+
+   #ellipse{
+     top:55%;
+   }
+
+   #content{
+    flex-direction: column-reverse;
+   }
+
+   #first{
+      padding-bottom: 0%;
+   }
+
+   .items{
+    padding: 0%;
+   }
+
+   #first{
+    padding: 0% 2% 5%;
+   }
+
+   #serving-card{
+    width: 500px;
+    height:10%;
+    align-items: flex-start;
+    box-shadow: none;
+    margin: 5% 0%;
+   }
+
+   #time{
+    display: flex;
+   }
+
+   #time .items{
+    width: 150px;
+    padding-left: 2%;
+   }
+
+   #informations{
+    width: 100%;
+   }
+}
+
+@media (max-width:600px){
+  #header{
+    margin: 2% 5%;
+    width: 90%;
+  }
+  #header h1{
+    font-size: 25px;
+  }
+  #content{
+    width: 90%;
+    margin: 2% 5%;
+  }
+  #serving-card{
+    width: 100%;
+  }
+  #ellipse{
+    top:57px;
+  }
+
+  #serving-card i{
+    font-size: 30px;
+   }
+
+   .items{
+    font-size: 12px;
+   }
+
+   #time .items{
+    width: 120px;
+   }
+}
+
+@media (max-width:400px){
+  #header{
+    margin: 2% 5%;
+   
+  }
+  #content{
+    margin: 2% 5% 2% 7%;
+  }
+  #ellipse{
+    top:90px;
+  }
+
+}
